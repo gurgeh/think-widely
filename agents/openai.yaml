@@ -1,0 +1,3 @@
+display_name: Think Widely
+short_description: Explore decisions from many angles, then synthesize an option frontier.
+default_prompt: Think widely about this problem. Explore multiple independent angles, preserve diverse strong options, and synthesize a recommendation with trade-offs and next steps.
