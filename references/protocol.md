@@ -15,7 +15,17 @@ Capture the problem before generating options.
 
 If the frame is too vague to proceed safely, ask only the smallest necessary clarifying question. Otherwise, make reasonable assumptions and state them.
 
-## 2. Choose Mapper Lenses
+## 2. Choose Depth
+
+Choose quick, standard, or deep before selecting mapper lenses. Use `depth-modes.md` for the detailed contract.
+
+- Quick: two to three lenses, compact synthesis, minimal scoring.
+- Standard: three to five lenses, visible candidate clusters, frontier, and recommendation.
+- Deep: five to seven lenses, deliberate expansion pass, stronger treatment of trade-offs and uncertainty.
+
+Default to standard unless the user asks for speed or unusually deep exploration.
+
+## 3. Choose Mapper Lenses
 
 Pick several lenses that are likely to produce genuinely different options. Favor structural diversity over theatrical personas.
 
@@ -30,7 +40,7 @@ Good mapper sets usually include:
 
 See `mapper-briefs.md` for reusable mapper prompts.
 
-## 3. Explore Divergently
+## 4. Explore Divergently
 
 Generate before judging. Each mapper should produce options with:
 
@@ -41,9 +51,11 @@ Generate before judging. Each mapper should produce options with:
 - Hidden assumptions.
 - Smallest useful test.
 
-When subagents are available and the user has authorized parallel agent work, assign mappers independently so they do not anchor on each other. When subagents are not available, simulate the separation by running lenses one at a time and postponing synthesis.
+Use independent subagents by default for standard and deep mode when the platform and user/session permissions allow it. Assign each subagent a distinct mapper brief and ask for concise candidate options, assumptions, weaknesses, and smallest useful tests.
 
-## 4. Expand If Narrow
+When subagents are not available or not allowed, simulate independence by running mapper lenses one at a time, avoiding cross-contamination, and postponing synthesis until all mapper passes are complete.
+
+## 5. Expand If Narrow
 
 If the candidates converge too early, run one expansion pass:
 
@@ -54,7 +66,7 @@ If the candidates converge too early, run one expansion pass:
 
 Only use expansion if it increases the useful option space.
 
-## 5. Reduce
+## 6. Reduce
 
 Synthesize without flattening. Preserve options that are strong for different reasons.
 
@@ -76,7 +88,7 @@ Synthesis warnings:
 - Do not reward familiarity unless feasibility is the deciding axis.
 - Do not ignore the user's values or constraints.
 
-## 6. Score
+## 7. Score
 
 Choose axes that fit the task. Do not overload the scorecard.
 
@@ -93,7 +105,11 @@ Common axes:
 
 Use scores to clarify trade-offs, not to hide judgment behind false precision.
 
-## 7. Recommend
+## 8. Quality Gate
+
+Before finalizing, use `quality-gates.md` to check breadth, separation, synthesis, recommendation, and calibration. If the answer reads like an ordinary list of good ideas, add another mapper or expansion pass before recommending.
+
+## 9. Recommend
 
 Give one best default path unless the user explicitly wants only options.
 
@@ -105,7 +121,7 @@ Include:
 - Key risks.
 - What would change the recommendation.
 
-## 8. Next Moves
+## 10. Next Moves
 
 End with the smallest actions that reduce uncertainty.
 

@@ -86,11 +86,13 @@ think-widely/
 │   └── openai.yaml
 ├── references/
 │   ├── protocol.md               # canonical tool-agnostic workflow
+│   ├── depth-modes.md            # quick, standard, and deep execution contracts
 │   ├── technical-ideation.md     # early technical/research exploration workflow
 │   ├── open-ended.md             # ideation workflow
 │   ├── mapper-briefs.md          # independent exploration roles
 │   ├── scoring-axes.md           # reusable axes by task type
 │   ├── expansion-techniques.md   # creativity techniques and oblique-style prompts
+│   ├── quality-gates.md          # final checks for breadth, synthesis, and calibration
 │   └── output-formats.md
 
 Each separate angle would produce one or more brief solution/option descriptions. A final summarizer step would then go through all produced options and preserve a diverse set of the best options along various axes.

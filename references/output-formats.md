@@ -17,29 +17,33 @@ Use the format that fits the user's task and desired depth.
 
 ## 2. Search Strategy
 
-Briefly list which mapper lenses were used.
+List the depth mode, mapper lenses used, and whether mappers were run through subagents or simulated independent passes.
 
-## 3. Candidate Option Space
+## 3. Mapper Findings
+
+Briefly preserve the distinct options or insights from each mapper before synthesis.
+
+## 4. Candidate Option Space
 
 Grouped clusters, not final ranking.
 
-## 4. Pareto Frontier
+## 5. Pareto Frontier
 
 The non-dominated options across the key axes.
 
-## 5. Recommended Path
+## 6. Recommended Path
 
 One primary recommendation, plus why.
 
-## 6. Experiments / Next Moves
+## 7. Experiments / Next Moves
 
 The smallest actions that reduce uncertainty.
 
-## 7. Rejected Or Dominated Options
+## 8. Rejected Or Dominated Options
 
 What was considered and why it fell off the frontier.
 
-## 8. What Would Change My Mind
+## 9. What Would Change My Mind
 
 Critical assumptions or missing facts.
 ```
@@ -49,6 +53,8 @@ Critical assumptions or missing facts.
 Use when the user wants a quick answer:
 
 ```markdown
+## Search Strategy
+
 ## Best Default
 
 ## Strong Alternatives
