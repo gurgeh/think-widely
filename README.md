@@ -9,6 +9,9 @@ The different angles are inspired by
 2. Techniques that have at some point worked for LLMs.
 3. Creativity provocations, like Brian Eno's "Oblique Strategies".
 
+## Redesign Note!
+I am considering making a number of specialized "wide-thinking" recipes instead. After that I can extract general rules.
+
 ## Human creativity / problem-solving techniques
 
 This should be one reference file, probably references/expansion-techniques.md.
